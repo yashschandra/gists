@@ -1,7 +1,8 @@
 // get value of a property
-function getPropValue(properName) {
-    let memoryAddress = calculateMemoryAddressOfPropValue(properName);
+function getPropValue(propName) {
+    let memoryAddress = calculateMemoryAddressOfPropValue(propName);
     let value = getValueAtMemoryAddress(memoryAddress);
+    return value;
 }
 
 // set value of a property
