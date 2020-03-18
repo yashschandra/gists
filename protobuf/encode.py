@@ -43,6 +43,7 @@ def encode_repeated_dict(dict_values, field_num):
 
 # returns encoded dict value along with its tag
 def encode_dict_with_tag(dict_value, field_num, repeated):
+    # check if value is an array of dict
     if repeated:
         return encode_repeated_dict(dict_value, field_num)
     tag = get_tag(field_num, 'dict')
@@ -62,6 +63,7 @@ def encode_repeated_varint(int_values, field_num):
 
 # returns encoded int value along with its tag
 def encode_varint_with_tag(int_value, field_num, repeated):
+    # check if value is an array of varint
     if repeated:
         return encode_repeated_varint(int_value, field_num)
     tag = get_tag(field_num, 'varint')
@@ -94,6 +96,7 @@ def encode_repeated_float(float_values, field_num):
 
 # returns encoded float value along with its tag
 def encode_float_with_tag(float_value, field_num, repeated):
+    # check if value is an array of float
     if repeated:
         return encode_repeated_float(float_value, field_num)
     tag = get_tag(field_num, 'float')
@@ -116,6 +119,7 @@ def encode_repeated_double(double_values, field_num):
 
 # returns encoded double value along with its tag
 def encode_double_with_tag(double_value, field_num, repeated):
+    # check if value is an array of double
     if repeated:
         return encode_repeated_double(double_value, field_num)
     tag = get_tag(field_num, 'double')
@@ -135,6 +139,7 @@ def encode_repeated_string(string_values, field_num):
 
 # returns encoded string value along with its tag
 def encode_string_with_tag(string_value, field_num, repeated):
+    # check if value is an array of string
     if repeated:
         return encode_repeated_string(string_value, field_num)
     tag = get_tag(field_num, 'string')
