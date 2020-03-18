@@ -1,0 +1,45 @@
+{
+    "_id": "5e3851506763f0c2453a3a1d",
+    "index": 4,
+    "guid": "fd44acb5-87c4-447f-b3c0-eb9102f4ead3",
+    "isActive": false,
+    "balance": "$3,272.32",
+    "picture": "http://placehold.it/32x32",
+    "age": 22,
+    "eyeColor": "blue",
+    "name": "Angelina Bird",
+    "gender": "female",
+    "company": "CONJURICA",
+    "email": "angelinabird@conjurica.com",
+    "phone": "+1 (941) 589-3314",
+    "address": "113 Belmont Avenue, Mahtowa, Indiana, 2161",
+    "about": "Dolor dolore laborum mollit ea voluptate minim ea ut. Ea deserunt aliquip voluptate quis nostrud elit ut deserunt dolore Lorem. Nisi est mollit qui excepteur.\r\n",
+    "registered": "2014-11-02T12:05:37 -06:-30",
+    "latitude": 11.135306,
+    "longitude": 11.076414,
+    "tags": [
+        "veniam",
+        "sit",
+        "minim",
+        "sit",
+        "in",
+        "exercitation",
+        "et"
+    ],
+    "friends": [
+        {
+            "id": 0,
+            "name": "Twila Cleveland"
+        },
+        {
+            "id": 1,
+            "name": "Tammy Farmer"
+        },
+        {
+            "id": 2,
+            "name": "Todd Patel"
+        }
+    ],
+    "greeting": "Hello, Angelina Bird! You have 10 unread messages.",
+    "favoriteFruit": "banana"
+}

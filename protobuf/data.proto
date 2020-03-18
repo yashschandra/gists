@@ -1,0 +1,38 @@
+// proto version 3
+syntax = "proto3";
+
+message Friend {
+    int64 id = 1;
+    string name = 2;
+}
+
+// message represeting our json data
+message Profile {
+    // field name `_id`
+    string _id = 1;
+    // wire type `int64`
+    int64 index = 2;
+    // field number 3
+    string guid = 3;
+    bool isActive = 4;
+    string balance = 5;
+    string picture = 6;
+    int64 age = 7;
+    string eyeColor = 8;
+    string name = 9;
+    string gender = 10;
+    string company = 11;
+    string email = 12;
+    string phone = 13;
+    string address = 14;
+    string about = 15;
+    string registered = 16;
+    double latitude = 17;
+    double longitude = 18;
+    // array of string
+    repeated string tags = 19;
+    // array of message `Friend`
+    repeated Friend friends = 20;
+    string greeting = 21;
+    string favoriteFruit = 22;
+}
