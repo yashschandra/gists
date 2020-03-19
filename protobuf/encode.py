@@ -48,6 +48,7 @@ def encode_dict_with_tag(dict_value, field_num, repeated):
         return encode_repeated_dict(dict_value, field_num)
     tag = get_tag(field_num, 'dict')
     encoded_value = encode_dict(dict_value)
+    # encode length for dict (wire type 2)
     encoded_len = encode_varint(len(encoded_value))
     return tag + encoded_len + encoded_value
 
@@ -144,6 +145,7 @@ def encode_string_with_tag(string_value, field_num, repeated):
         return encode_repeated_string(string_value, field_num)
     tag = get_tag(field_num, 'string')
     encoded_value = encode_string(string_value)
+    # encode length for string (wire type 2)
     encoded_len = encode_varint(len(encoded_value))
     return tag + encoded_len + encoded_value
 
